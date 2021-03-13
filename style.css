@@ -1,0 +1,253 @@
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#container {
+    width: 20%;
+    height: 500px;
+    overflow: scroll;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 130px solid blue;
+}
+
+.upsidedowntriangle {
+    width: 0;
+    height: 0;
+    margin-top: 20px;
+    border-top: 130px solid rgb(35, 35, 167);
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+}
+
+.angleright {
+    width: 0;
+    height: 0;
+    margin-top: 2px;
+    border-top: 80px solid transparent;
+    border-left: 130px solid rgb(97, 97, 243);
+    border-bottom: 80px solid transparent;
+}
+
+.angleleft {
+    width: 0;
+    height: 0;
+    margin-top: 2px;
+    border-top: 80px solid transparent;
+    border-right: 130px solid rgb(38, 38, 98);
+    border-bottom: 80px solid transparent;
+}
+
+#container1 {
+    width: 20%;
+    height: 500px;
+    overflow: scroll;
+}
+
+.star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid slateblue;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+    margin-bottom: 80px;
+  }
+
+.star-five:before {
+    border-bottom: 80px solid slateblue;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+
+.star-five:after {
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid slateblue;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+
+.padlock {
+    font-size:8px; 
+    position:relative; 
+    width:18em; 
+    height:13em; 
+    border-radius:2em; 
+    top:10em; 
+    box-sizing:border-box; 
+    border:3.5em solid skyblue; 
+    border-right-width:7.5em; 
+    border-left-width:7.5em; 
+    margin:80px 0 0 30px;
+}
+
+.padlock:before {
+    content:""; 
+    box-sizing:border-box; 
+    position:absolute; 
+    border:2.5em solid skyblue; 
+    width:14em; 
+    height:12em; 
+    left:50%; 
+    margin-left:-7em; 
+    top:-12em; 
+    border-top-left-radius:7em; 
+    border-top-right-radius:7em;
+}
+
+.padlock:after {
+    content:""; 
+    box-sizing:border-box; 
+    position:absolute; 
+    border:1em solid skyblue; 
+    width:5em; height:8em; 
+    border-radius:2.5em; 
+    left:50%; 
+    top:-1em; 
+    margin-left:-2.5em;
+}
+
+.scope {
+    font-size:10em; 
+    display:inline-block; 
+    width:0.4em; 
+    box-sizing:content-box; 
+    height:0.4em; 
+    border:0.1em solid blueviolet; 
+    position:relative; 
+    border-radius:0.35em;
+    margin: 100px 0  0 30px;
+}
+
+.scope:before {
+    content:""; 
+    display:inline-block; 
+    position:absolute; 
+    right:-0.25em; 
+    bottom:-0.1em; 
+    border-width:0; 
+    background-color: blueviolet; 
+    width:0.35em; 
+    height:0.08em; 
+    transform:rotate(45deg);
+}
+
+#container2 {
+    width: 20%;
+    height: 500px;
+    overflow: scroll;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: turquoise;
+    margin-bottom: 20px;
+}
+
+.heart {
+  position:relative; 
+  width:100px; 
+  height:90px;
+}
+
+.heart:before, .heart:after {
+  position:absolute; 
+  content:"";
+  left:100px; top:0; 
+  width:100px; 
+  height:160px; 
+  background: teal; 
+  border-radius:50px 50px 0 0; 
+  transform:rotate(-45deg); 
+  transform-origin:0 100%;
+}
+
+.heart:after {
+  left:0; 
+  transform:rotate(45deg); 
+  transform-origin:100% 100%;
+}
+
+.mob {
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.mob #one, .mob #two, .mob #three {
+    width: 33.33%;
+    height: 100%;
+}
+
+#one {
+    background-color: teal;
+}
+
+#three {
+    background-color: skyblue;
+}
+
+#container3 {
+    width: 20%;
+    height: 500px;
+    overflow: scroll;
+}
+
+.square {
+    width:150px; 
+    height:150px; 
+    background: royalblue;
+}
+
+.angle {
+    width: 0;
+    height: 0;
+    border-top: 75px solid rgba(35, 35, 167);
+    border-bottom: 75px solid blue;
+    border-left: 75px solid rgb(3, 3, 122);
+    border-right: 75px solid deepskyblue;
+    margin-top: 30px;
+}
+
+.rectangle {
+    width:250px; 
+    height:150px; 
+    background: dodgerblue;
+    margin-top: 30px;
+}
+
+
+
