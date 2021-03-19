@@ -53,7 +53,7 @@
     overflow: scroll;
 }
 
-.star-five {
+/* .star-five {
     margin: 50px 0;
     position: relative;
     display: block;
@@ -63,7 +63,6 @@
     border-bottom: 70px solid slateblue;
     border-left: 100px solid transparent;
     transform: rotate(35deg);
-    margin-bottom: 80px;
   }
 
 .star-five:before {
@@ -92,71 +91,57 @@
     border-left: 100px solid transparent;
     transform: rotate(-70deg);
     content: '';
-  }
+  } */
 
-.padlock {
-    font-size:8px; 
-    position:relative; 
-    width:18em; 
-    height:13em; 
-    border-radius:2em; 
-    top:10em; 
-    box-sizing:border-box; 
-    border:3.5em solid skyblue; 
-    border-right-width:7.5em; 
-    border-left-width:7.5em; 
-    margin:80px 0 0 30px;
+  .padlock {
+    margin-top: 120px;
+    position: relative;
 }
 
-.padlock:before {
-    content:""; 
-    box-sizing:border-box; 
-    position:absolute; 
-    border:2.5em solid skyblue; 
-    width:14em; 
-    height:12em; 
-    left:50%; 
-    margin-left:-7em; 
-    top:-12em; 
-    border-top-left-radius:7em; 
-    border-top-right-radius:7em;
+.padlock .before {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 20px solid skyblue;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -60px;
 }
 
-.padlock:after {
-    content:""; 
-    box-sizing:border-box; 
-    position:absolute; 
-    border:1em solid skyblue; 
-    width:5em; height:8em; 
-    border-radius:2.5em; 
-    left:50%; 
-    top:-1em; 
-    margin-left:-2.5em;
+.padlock .after {
+    width: 150px;
+    height: 90px;
+    background-color: skyblue;
+    border-radius: 30px;
+    margin-top: 70px;
 }
 
-.scope {
-    font-size:10em; 
-    display:inline-block; 
-    width:0.4em; 
-    box-sizing:content-box; 
-    height:0.4em; 
-    border:0.1em solid blueviolet; 
-    position:relative; 
-    border-radius:0.35em;
-    margin: 100px 0  0 30px;
+.after .after1 {
+    width: 25px;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    margin: 25px  0 0 60px;
+    
 }
 
-.scope:before {
-    content:""; 
-    display:inline-block; 
-    position:absolute; 
-    right:-0.25em; 
-    bottom:-0.1em; 
-    border-width:0; 
-    background-color: blueviolet; 
-    width:0.35em; 
-    height:0.08em; 
-    transform:rotate(45deg);
+.search {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 20px solid steelblue;
+    margin-top: 30px;
+}
+
+.search .before {
+    width: 20px;
+    height: 80px;
+    margin-left: 100px;
+    margin-top: 85px;
+    background-color: steelblue;
+    transform: rotate(-45deg);
 }
 
 #container2 {
@@ -166,45 +151,58 @@
 }
 
 .circle {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: turquoise;
     margin-bottom: 20px;
 }
 
+#circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#circle #angle {
+    width: 0;
+    height: 0;
+    border-top: 75px solid rgba(35, 35, 167, 0.719);
+    border-bottom: 75px solid blue;
+    border-left: 75px solid rgba(10, 10, 151, 0.466);
+    border-right: 75px solid rgba(0, 191, 255, 0.719);
+}
+
 .heart {
-  position:relative; 
-  width:100px; 
-  height:90px;
+    display: flex;
+    position: relative;
+    margin-left: 70px;
+    margin-bottom: 40px;
 }
 
-.heart:before, .heart:after {
-  position:absolute; 
-  content:"";
-  left:100px; top:0; 
-  width:100px; 
-  height:160px; 
-  background: teal; 
-  border-radius:50px 50px 0 0; 
-  transform:rotate(-45deg); 
-  transform-origin:0 100%;
+.heart .before, .heart .after {
+    width: 80px;
+    height: 140px;
+    background-color: teal;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(45deg);
 }
 
-.heart:after {
-  left:0; 
-  transform:rotate(45deg); 
-  transform-origin:100% 100%;
+.heart .before {
+    transform: rotate(-46deg);
+    margin-left: -45px;
+    position: absolute;
 }
 
 .mob {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: navy;
     border-radius: 50%;
     display: flex;
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .mob #one, .mob #two, .mob #three {
@@ -218,6 +216,30 @@
 
 #three {
     background-color: skyblue;
+}
+
+.mob2 {
+    width: 150px;
+    height: 150px;
+    background-color: skyblue;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.mob2 .one, .mob2 .two, .mob2 .three {
+    width: 100%;
+    height: 50px;
+}
+
+.one {
+    background-color: rgb(64, 107, 224);
+}
+
+.three {
+    background-color: rgb(2, 2, 85);
 }
 
 #container3 {
@@ -248,6 +270,8 @@
     background: dodgerblue;
     margin-top: 30px;
 }
+
+
 
 
 
